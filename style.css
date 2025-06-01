@@ -1,0 +1,64 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: grey; /* Default background for body, will be overridden by header for its section */
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    background-image: url('https://placehold.co/1920x1080/cccccc/666666?text=Fullscreen+Background');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0; /* Reset default ul margin */
+    padding: 0; /* Reset default ul padding */
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    padding-top: 1px; /* To contain margins of .content-wrapper */
+    padding-bottom: 1px; /* To contain margins of .content-wrapper */
+    /* The grey background from body will show here */
+}
+
+.content-wrapper {
+    background-color: white;
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    top: -100px; /* To overlap header */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
