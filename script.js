@@ -470,6 +470,6 @@ function askExample(question) {
 /**
  * Инициализация на приложението при зареждане на страницата.
  */
-document.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('load', () => {
     new PostVaiChatApp();
 });
